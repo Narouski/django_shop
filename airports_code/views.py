@@ -147,15 +147,15 @@ AIRPORTS_CODES = {
 
 
 def airports_codes(request, code):
-    airports = AIRPORTS_CODES.get(code.upper, "Not found!")
+    airports = AIRPORTS_CODES.get(code.upper(), "Not found!")
     cxt = {
         'airports': airports
     }
     return render(request, template_name='airports.html', context=cxt)
 
 
-def all_codes(request, airport):
-    codes = AIRPORTS_CODES.get(airport.upper, "Not found!")
+def all_codes(request):
+    codes = AIRPORTS_CODES
     cod_air = {
         'codes': codes
     }
