@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from proj.airports_codes import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('<str:airports>/', views.airports_codes),
+    path('', views.all_codes),
 ]
+
+
