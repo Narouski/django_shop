@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AirportsCodesConfig(AppConfig):
+class BooksDirConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'airports_code'
+    name = 'books_dir'
