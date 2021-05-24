@@ -14,4 +14,4 @@ class DirectoryAdmin(admin.ModelAdmin):
     ]
 
 
-admin.site.register(Directory)
+admin.site.register(Directory, DirectoryAdmin)
