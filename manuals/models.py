@@ -3,7 +3,9 @@ from django.db import models
 
 class Annotation(models.Model):
     annotation = models.TextField(
-        verbose_name="Аннотация"
+        verbose_name="Аннотация",
+        blank=True,
+        null=True
     )
 
     def __str__(self) -> str:
@@ -88,6 +90,10 @@ class Authors(models.Model):
         Publishers,
         on_delete=models.PROTECT,
         related_name="publishers"
+    )
+    unavailable = models.BooleanField(
+        verbose_name="Нет в наличии",
+        default=False
     )
     created = models.DateTimeField(
         verbose_name="Дата регистрации Автора",
