@@ -6,15 +6,16 @@
 </head>
 <body>
     <h1>Автор</h1>
-    ID : {{ author.pk }}<br>
-    Name : {{ author.first_name }}<br>
-    Surname : {{ author.last_name }}<br>
-    Biography : {{ author.biography }}<br>
-    Genre : {{ author.genre_author }}<br>
-    Series : {{ author.series_author }}<br>
-    Annotation : {{ author.annotation_author }}<br>
-    Publisher : {{ author.publisher_author }}<br>
-    Created : {{ author.created }}<br>
-    Updated : {{ author.updated }}<br>
+    <b>ID</b> : {{ author.pk }}<br>
+    <b>Name</b> : {{ author.first_name }}<br>
+    <b>Surname</b> : {{ author.last_name }}<br>
+    <b>Biography</b> : {{ author.biography }}<br>
+    <b>Genre</b> : {{ author.genre_author }}<br>
+    <b>Series</b> : {{ author.series_author }}<br>
+    <b>Annotation</b>: {{ author.annotation_author }}<br>
+    <b>Publisher</b> : {{ author.publisher_author }}<br>
+    <b>Created</b> : {{ author.created }}<br>
+    <b>Time after</b> creation : {{ author.created|timesince }}<br>
+    <b>Updated</b> : {{ author.updated }}<br>
 </body>
 </html>

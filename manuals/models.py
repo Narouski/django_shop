@@ -21,8 +21,8 @@ class Series(models.Model):
         verbose_name="Количество серий"
     )
 
-    def __str__(self) -> str:
-        return self.count_series
+    def __str__(self):
+        return str(self.count_series)
 
     class Meta:
         verbose_name = "Серию"
