@@ -9,6 +9,6 @@ def authors(request):
     }
     return render(
         request,
-        template_name=authors.html,
+        template_name='authors.html',
         context=ctx
     )

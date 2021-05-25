@@ -91,10 +91,6 @@ class Authors(models.Model):
         on_delete=models.PROTECT,
         related_name="publishers"
     )
-    unavailable = models.BooleanField(
-        verbose_name="Нет в наличии",
-        default=False
-    )
     created = models.DateTimeField(
         verbose_name="Дата регистрации Автора",
         auto_now=False,
