@@ -15,7 +15,7 @@ def authors(request, author_id):
 
 
 def author_list(request):
-    authors_list = models.Authors.all()
+    authors_list = models.Authors.objects.all()
     ctx = {
         'authors_list': authors_list
     }
