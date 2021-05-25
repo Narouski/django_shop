@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class BooksDirConfig(AppConfig):
+class ManualsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'books_dir'
+    name = 'manuals'
