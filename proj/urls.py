@@ -20,6 +20,6 @@ from manuals import views as author_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('author/<int:author_id>/', author_views.authors),
-    path('', author_views.author_list)
+    path('author/<int:author_id>/', author_views.authors, name="author"),
+    path('', author_views.author_list, name="author-list")
 ]
