@@ -10,7 +10,7 @@ class Annotation(models.Model):
         return f"Аннотация {self.annotation}"
 
     class Meta:
-        verbose_name = "Аннотация"
+        verbose_name = "Аннотацию"
         verbose_name_plural = "Аннотации"
 
 
@@ -23,7 +23,7 @@ class Series(models.Model):
         return f"Серия {self.count_series}"
 
     class Meta:
-        verbose_name = "Серия"
+        verbose_name = "Серию"
         verbose_name_plural = "Серии"
 
 
@@ -37,7 +37,7 @@ class Publishers(models.Model):
         return f"Издатель {self.publisher}"
 
     class Meta:
-        verbose_name = "Издатель"
+        verbose_name = "Издателя"
         verbose_name_plural = "Издатели"
 
 
@@ -104,5 +104,5 @@ class Authors(models.Model):
         return f"Автор {self.first_name} {self.last_name}"
 
     class Meta:
-        verbose_name = "Автор"
+        verbose_name = "Автора"
         verbose_name_plural = "Авторы"
