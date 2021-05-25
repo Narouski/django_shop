@@ -21,5 +21,4 @@ from manuals import views as author_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('author/', author_views.authors),
-    path('', author_views.authors),
 ]

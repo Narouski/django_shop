@@ -9,7 +9,7 @@ class Annotation(models.Model):
     )
 
     def __str__(self) -> str:
-        return f"Аннотация {self.annotation}"
+        return self.annotation
 
     class Meta:
         verbose_name = "Аннотацию"
@@ -22,7 +22,7 @@ class Series(models.Model):
     )
 
     def __str__(self) -> str:
-        return f"Серия {self.count_series}"
+        return self.count_series
 
     class Meta:
         verbose_name = "Серию"
@@ -36,7 +36,7 @@ class Publishers(models.Model):
     )
 
     def __str__(self) -> str:
-        return f"Издатель {self.publisher}"
+        return self.publisher
 
     class Meta:
         verbose_name = "Издателя"
@@ -50,7 +50,7 @@ class Genres(models.Model):
     )
 
     def __str__(self) -> str:
-        return f"Жанр {self.genre}"
+        return self.genre
 
     class Meta:
         verbose_name = "Жанр"

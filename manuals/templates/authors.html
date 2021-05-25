@@ -5,6 +5,16 @@
     <title>Author</title>
 </head>
 <body>
-    {{ author }}
+    <h1>Автор</h1>
+    ID : {{ author.pk }}<br>
+    Name : {{ author.first_name }}<br>
+    Surname : {{ author.last_name }}<br>
+    Biography : {{ author.biography }}<br>
+    Genre : {{ author.genre_author }}<br>
+    Series : {{ author.series_author }}<br>
+    Annotation : {{ author.annotation_author }}<br>
+    Publisher : {{ author.publisher_author }}<br>
+    Created : {{ author.created }}<br>
+    Updated : {{ author.updated }}<br>
 </body>
 </html>
